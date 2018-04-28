@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<title>Object Prototypes</title>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+
+<script>
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+    this.nationality = "English";
+    this.nationality2="Indonesia";
+}
+
+var myFather = new Person("John", "Doe", 50, "blue");
+var myMother = new Person("Sally", "Rally", 48, "green");
+
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.nationality + ". My mother is " + myMother.nationality2; 
+</script>
+
+</body>
+</html>
